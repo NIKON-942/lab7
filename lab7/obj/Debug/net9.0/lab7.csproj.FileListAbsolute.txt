@@ -1,0 +1,14 @@
+K:\Files\KPI\Files\OOP\lab\lab7\lab7\bin\Debug\net9.0\lab7.exe
+K:\Files\KPI\Files\OOP\lab\lab7\lab7\bin\Debug\net9.0\lab7.deps.json
+K:\Files\KPI\Files\OOP\lab\lab7\lab7\bin\Debug\net9.0\lab7.runtimeconfig.json
+K:\Files\KPI\Files\OOP\lab\lab7\lab7\bin\Debug\net9.0\lab7.dll
+K:\Files\KPI\Files\OOP\lab\lab7\lab7\bin\Debug\net9.0\lab7.pdb
+K:\Files\KPI\Files\OOP\lab\lab7\lab7\obj\Debug\net9.0\lab7.GeneratedMSBuildEditorConfig.editorconfig
+K:\Files\KPI\Files\OOP\lab\lab7\lab7\obj\Debug\net9.0\lab7.AssemblyInfoInputs.cache
+K:\Files\KPI\Files\OOP\lab\lab7\lab7\obj\Debug\net9.0\lab7.AssemblyInfo.cs
+K:\Files\KPI\Files\OOP\lab\lab7\lab7\obj\Debug\net9.0\lab7.csproj.CoreCompileInputs.cache
+K:\Files\KPI\Files\OOP\lab\lab7\lab7\obj\Debug\net9.0\lab7.dll
+K:\Files\KPI\Files\OOP\lab\lab7\lab7\obj\Debug\net9.0\refint\lab7.dll
+K:\Files\KPI\Files\OOP\lab\lab7\lab7\obj\Debug\net9.0\lab7.pdb
+K:\Files\KPI\Files\OOP\lab\lab7\lab7\obj\Debug\net9.0\lab7.genruntimeconfig.cache
+K:\Files\KPI\Files\OOP\lab\lab7\lab7\obj\Debug\net9.0\ref\lab7.dll

@@ -244,7 +244,7 @@ public static class Tasks
     public static float? SumOfElementsLessThanFirstNegative(this SinglyLinkedListNode node)
     {
         var firstNegative = node.FirstOrDefault(n => n.Value < 0)?.Value;
-        if (node.FirstOrDefault(n => n.Value < 0)?.Value == null)
+        if (firstNegative == null)
             return null;
         if (!node.Any(n => n.Value < firstNegative))
             return null;

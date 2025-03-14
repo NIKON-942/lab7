@@ -211,7 +211,7 @@ public static class ListTests
         var list = new SinglyLinkedListNode(55f, -3.52f, 99.08f, 2f, 22f, 33f);
         Console.WriteLine($"Creating new list with values 55, -3.52, 99.08, 2, 22, 33. List: {list}");
         Console.WriteLine($"First bigger than 10.5 is {list.FirstGreaterThan(10.5f)}");
-        Console.WriteLine($"First bigger than -5 is {list.FirstGreaterThan(-5)}");
+        Console.WriteLine($"First bigger than 60 is {list.FirstGreaterThan(60f)}");
         var noNumber = list.FirstGreaterThan(100);
         Console.WriteLine(noNumber.HasValue
             ? $"First greater than 100 is {noNumber}"

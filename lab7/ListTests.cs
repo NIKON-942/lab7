@@ -208,9 +208,9 @@ public static class ListTests
     private static void TestGreaterThan()
     {
         Console.WriteLine("Test_11");
-        var list = new SinglyLinkedListNode(55f, -3.52f, 99.08f, 2f);
-        Console.WriteLine($"Creating new list with values 55, -3.52, 99.08, 2. List: {list}");
-        Console.WriteLine($"First bigger than 60 is {list.FirstGreaterThan(60)}");
+        var list = new SinglyLinkedListNode(55f, -3.52f, 99.08f, 2f, 22f, 33f);
+        Console.WriteLine($"Creating new list with values 55, -3.52, 99.08, 2, 22, 33. List: {list}");
+        Console.WriteLine($"First bigger than 10.5 is {list.FirstGreaterThan(10.5f)}");
         Console.WriteLine($"First bigger than -5 is {list.FirstGreaterThan(-5)}");
         var noNumber = list.FirstGreaterThan(100);
         Console.WriteLine(noNumber.HasValue
@@ -235,11 +235,11 @@ public static class ListTests
     private static void NewListGreaterThan()
     {
         Console.WriteLine("Test_13");
-        var list = new SinglyLinkedListNode(55f, -3.52f, 99.08f, 2f);
-        Console.WriteLine($"Creating new list with values 55, -3.52, 99.08, 2. List: {list}");
-        var newList1 = list.NewListGreaterThan(1);
-        Console.WriteLine($"Creating new list with values greater than 1 : {newList1}");
-        var newList2 = list.NewListGreaterThan(100);
+        var list = new SinglyLinkedListNode(55f, -3.52f, 99.08f, 2f, 11.56f, 92f, 54.5f);
+        Console.WriteLine($"Creating new list with values 55, -3.52, 99.08, 2, 11.56, 92, 54.5. List: {list}");
+        var newList1 = list.NewListGreaterThan(10.5f);
+        Console.WriteLine($"Creating new list with values greater than 10.5 : {newList1}");
+        var newList2 = list.NewListGreaterThan(60);
         Console.WriteLine($"Creating new list with values greater than 60 : {newList2}");
     }
 
@@ -248,8 +248,8 @@ public static class ListTests
         Console.WriteLine("Test_14");
         var list = new SinglyLinkedListNode(12f, -6.63f, 8.88f, 12f, -32f, 19f, 44f, -40f, -5.45f);
         Console.WriteLine($"Creating new list with values 12, -6.63, 8.88, 12, -32, 19, 44, -40, -5.45. List: {list}");
-        var newList1 = list.DeleteElementsLessThan(5);
-        Console.WriteLine($"Deleting from list elements less than 5 : {newList1}");
+        var newList1 = list.DeleteElementsLessThan(2.6f);
+        Console.WriteLine($"Deleting from list elements less than 2.6 : {newList1}");
         var newList2 = list.DeleteElementsLessThan(40);
         Console.WriteLine($"Deleting from list elements less than 40 : {newList2}");
     }

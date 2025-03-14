@@ -246,11 +246,12 @@ public static class Tasks
         var firstNegative = node.FirstOrDefault(n => n.Value < 0)?.Value;
         if (node.FirstOrDefault(n => n.Value < 0)?.Value == null)
             return null;
-        return node.Any(n => n.Value < firstNegative) 
-            ? node.Where(n => n.Value < firstNegative)
+        if (!node.Any(n => n.Value < firstNegative))
+            return null;
+        
+        return node.Where(n => n.Value < firstNegative)
                 .Select(n => n.Value)
-                .Sum() 
-            : null;
+                .Sum();
     }
 
     /// <summary>
@@ -261,11 +262,12 @@ public static class Tasks
     /// <returns>New singly linked list with values greater than the passed one, if any, otherwise null.</returns>
     public static SinglyLinkedListNode? NewListGreaterThan(this SinglyLinkedListNode node, float value)
     {
-        return node.Any(n => n.Value > value) 
-            ? new SinglyLinkedListNode(node.Where(n => n.Value > value && n.Value.HasValue)
+        if (!node.Any(n => n.Value > value))
+            return null;
+        
+        return new SinglyLinkedListNode(node.Where(n => n.Value > value && n.Value.HasValue)
                 .Select(n => n.Value!.Value)
-                .ToArray()) 
-            : null;
+                .ToArray());
     }
     
     /// <summary>
